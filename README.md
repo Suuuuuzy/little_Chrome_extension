@@ -18,7 +18,7 @@ chrome.runtime.sendMessage(targetExtensionId, {type: 'MsgFromPage', msg: 'Hello,
 
 the targetExtensionId can be found in Chrome extension page:
 
-![Screen Shot 2019-08-01 at 16.21.19](/Users/jia/Documents/GitHub/little_Chrome_extension/pic/Screen Shot 2019-08-01 at 16.21.19.png)
+![Screen Shot 2019-08-01 at 16.21.19](pic/Screen Shot 2019-08-01 at 16.21.19.png)
 
 
 
