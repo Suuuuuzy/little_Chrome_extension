@@ -6,14 +6,14 @@ $(document).ready(function($) {
     // console.log('Hello Developer');
     var times = 0;
     $("body").on("click",function(){
-        console.log(Date());
+        console.log(window.performance.now());
         console.log("click");
     });
     $("body").on(
         {
             mouseenter: function () {
                 // console.log(times++);
-                console.log(Date());
+                console.log(window.performance.now());
                 console.log('hover');
             }
         }
