@@ -59,5 +59,20 @@ document.addEventListener(evtname, function () {
 
 
 
+/*
+ listen input in the site
+ */
+document.addEventListener('input', logKey);
+
+function logKey(e) {
+    console.log(window.performance.now());
+    console.log(e.target.value);
+  // log.textContent += ` ${e.code}`;
+}
+
+
+
+
+
 
 
