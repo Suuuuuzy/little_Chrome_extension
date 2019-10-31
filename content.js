@@ -6,15 +6,15 @@ $(document).ready(function($) {
     // console.log('Hello Developer');
     var times = 0;
     $("body").on("click",function(){
-        console.log(window.performance.now());
-        console.log("click");
+        // console.log(window.performance.now());
+        // console.log("click");
     });
     $("body").on(
         {
             mouseenter: function () {
                 // console.log(times++);
-                console.log(window.performance.now());
-                console.log('hover');
+                // console.log(window.performance.now());
+                // console.log('hover');
             }
         }
         ,
@@ -53,8 +53,8 @@ var visProp = getVisibilityState();
 var evtname = visProp.replace(/[V|v]isibilityState/, '') + 'visibilitychange';
 // console.log(evtname);
 document.addEventListener(evtname, function () {
-    console.log("visibilitychanged");
-    console.log("NOW: " + document[visProp]);
+    // console.log("visibilitychanged");
+    // console.log("NOW: " + document[visProp]);
 },false);
 
 
@@ -65,11 +65,11 @@ document.addEventListener(evtname, function () {
 document.addEventListener('input', logKey);
 
 function logKey(e) {
-    console.log(window.performance.now());
+    // console.log(window.performance.now());
+    console.log(Date.now());
     console.log(e.target.value);
   // log.textContent += ` ${e.code}`;
 }
-
 
 
 
